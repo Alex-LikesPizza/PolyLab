@@ -1,0 +1,137 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 600px; /* Adjust the width as per your preference */
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+.main {
+  text-align: center;
+  padding: 20px;
+}
+
+.language-switch {
+  margin-bottom: 20px;
+}
+
+.translation-container {
+  margin: 20px;
+}
+
+.translation-container label {
+  font-weight: bold;
+}
+
+.translation-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.not-guessed-words {
+  margin: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+thead {
+  background-color: #333;
+  color: #fff;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+.square-button {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square-button svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.language-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.language-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+  min-width: 7rem;
+}
+#explanation{
+  margin-top: -0.2rem;
+  text-align: start;
+  font-size: 0.8rem;
+}
+.section-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section-button {
+  width: 2.65rem;
+  height: 2.65rem;
+  margin: 0 5px;
+  border: 2px solid #333;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 0.6rem;
+}
+
+.section-button.active {
+  background-color: #333;
+  color: #fff;
+}
+.close-button{
+  color: gray;
+  background-color: transparent;
+  outline: none;
+  border:none;
+  cursor:pointer;
+  position: absolute;
+  right: 0;
+}

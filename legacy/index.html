@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Translation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js" defer></script>
+    <script type="module" src="vocabulary.js"></script>
+</head>
+<body>
+    <div class="container">
+        <main class="main">
+            <div class="language-container">
+                <button id="french-button" class="language-button">French</button>
+                <button id="switch-language" class="square-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5zm14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5z"/>
+                    </svg>
+                </button>
+                <button id="romanian-button" class="language-button">Romanian</button>
+            </div>
+            <div class="translation-container">
+                <div class="word-to-translate">
+                    <label for="word">Word to Translate:</label>
+                    <input type="text" id="word" readonly>
+                    <i><p id="explanation"></p></i>
+                </div>
+
+                <div class="translated-word">
+                    <label for="translation">Translation:</label>
+                    <input type="text" id="translation">
+                </div>
+            </div>
+            <div class="not-guessed-words">
+                <h2>Vocabulary</h2>
+                <table>
+                    <thead>
+                      <tr>
+                        <th>French</th>
+                        <th>Romanian</th>
+                      </tr>
+                    </thead>
+                    <tbody id="vocabulary-list"></tbody>
+                  </table>
+            </div>
+            <div class="section-buttons">
+                <button class="section-button active" data-words="1">1</button>
+                <button class="section-button" data-words="2">2</button>
+                <button class="section-button" data-words="3">3</button>
+                <button class="section-button" data-words="4">4</button>
+                <button class="section-button" data-words="5">5</button>
+                <button class="section-button" data-words="6">6</button>
+                <button class="section-button" data-words="7">7</button>
+                <button class="section-button" data-words="8">8</button>
+                <button class="section-button" data-words="9">9</button>
+                <button class="section-button" data-words="10">10</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
