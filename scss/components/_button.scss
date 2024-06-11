@@ -1,0 +1,33 @@
+.no-button{
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  position: relative;
+  border-radius: 5%;
+  cursor: pointer;
+  &::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: currentColor;
+    transition: 0.2s all;
+  }
+  &:hover{
+    text-shadow: 0 0.5rem 1rem currentColor;
+  } 
+  &:hover::after{
+    width: 100%;
+  }
+  &:focus{
+    outline: 1px solid currentColor;
+    outline-offset: 0.2rem;
+  }
+}

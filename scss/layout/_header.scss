@@ -1,0 +1,20 @@
+.header{
+  height: 5rem;
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: $primary;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $text-light;
+  font-size: 1.2rem;
+  &__nav{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  &__logo{
+    height: 100%;
+  }
+}

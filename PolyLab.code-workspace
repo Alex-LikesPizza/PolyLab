@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "PolyLab",
+			"path": "."
+		},
+		{
+			"name": "src",
+			"path": "src"
+		},
+		{
+			"name": "scss",
+			"path": "scss"
+		}
+	],
+	"settings": {}
+}
